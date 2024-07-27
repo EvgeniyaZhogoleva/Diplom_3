@@ -7,6 +7,7 @@ class MainPageLocators:
     BUTTON_ORDER_FEED = (By.XPATH, '//p[text()="Лента Заказов"]') # кнопка "Лента заказов"
     BUTTON_LOG_IN_ACCOUNT = (By.XPATH, '//button[text()="Войти в аккаунт"]')  # кнопка "Войти в аккаунт"
     BUTTON_ORDER = (By.XPATH, '//button[text()="Оформить заказ"]')  # кнопка "Оформить заказ" на главной странице
+    BUN_LIST = (By.XPATH, '//h2[contains(text(),"Булки")]')
 
 
 class ForgotPasswordPageLocators:
@@ -22,7 +23,7 @@ class PersonalAccountLocators:
     FIELD_PASSWORD = (By.NAME, "Пароль")  # поле Пароль
     BUTTON_IN = (By.XPATH, '//button[text()="Войти"]')  # кнопка "Войти"
     BUTTON_HISTORY_ORDER = (By.XPATH, '//a[text()="История заказов"]') # кнопка "История заказов"
-    BUTTON_LOGOUT = (By.XPATH, '//button[text()="Выход"]')  # кнопка "Выйти" в личном кабинете
+    BUTTON_LOGOUT = (By.XPATH, "//button[text()='Выход']")  # кнопка "Выйти" в личном кабинете
     TITLE_ENTER = (By.XPATH, "//h2[text()='Вход']")  # надпись "Вход"
     ACCOUNT_TEXT = (By.CSS_SELECTOR, "p.Account_text__fZAIn.text.text_type_main-default") # надпись "В этом разделе вы можете изменить свои персональные данные"
 

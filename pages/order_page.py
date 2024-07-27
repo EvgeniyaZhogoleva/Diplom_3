@@ -78,6 +78,7 @@ class OrderPage(BasePage):
 
     @allure.step('Получить количество выполненных заказов за всё время')
     def get_all_time_orders(self):
+        self.find_element_with_wait(OrderLocators.ORDER_ALL_TIME, wait_time=10)
         return self.get_text_from_element(OrderLocators.ORDER_ALL_TIME)
 
     @allure.step('Получить количество выполненных заказов за сегодня')

@@ -12,6 +12,7 @@ class PersonalAccountPage(BasePage):
 
     @allure.step('Ввести почту')
     def input_email(self, email):
+        self.find_element_with_wait(PersonalAccountLocators.FIELD_EMAIL, wait_time=10)
         self.add_text_to_element(PersonalAccountLocators.FIELD_EMAIL, email)
 
     @allure.step('Ввести пароль')
@@ -25,6 +26,7 @@ class PersonalAccountPage(BasePage):
 
     @allure.step('Нажать на кнопку "История заказов"')
     def click_to_button_history_order(self):
+        self.find_element_with_wait(PersonalAccountLocators.BUTTON_HISTORY_ORDER, wait_time=10)
         self.click_to_element(PersonalAccountLocators.BUTTON_HISTORY_ORDER)
 
     @allure.step('Отображение надписи "В этом разделе вы можете изменить свои персональные данные"')
